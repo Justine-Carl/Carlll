@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url("assets/sample5.jpg") center/cover no-repeat;
+            color: #fff;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(44, 110, 73, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img { width: 60px; }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .nav-links a:hover { color: #532c29; }
+
+        section {
+            display: none;
+            padding: 100px 50px;
+            text-align: center;
+        }
+
+        section:target { display: block; }
+
+        #home, #about {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 100px 0;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .center-container img { width: 350px; border-radius: 15px; }
+
+        .intro-text {
+            max-width: 500px;
+            font-size: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h4, h3, h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #c54040;
+        }
+
+        #home h4, #home h3, #about h4, #about h3 {
+            color: white;
+        }
+
+        #services h2, #services h4 {
+            color: #ffdfbf;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .service-card {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-card h4 {
+            color: #ffdfbf;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        .service-card button {
+            background-color: #2C6E49;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px black;
+            transition: background-color 0.3s;
+        }
+
+        .service-card button:hover { background-color: #ff6f61; }
+
+        form input, form button {
+            padding: 10px;
+            font-size: 1rem;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            background-color: #2C6E49;
+            color: white;
+            cursor: pointer;
+        }
+
+        form button:hover { background-color: #ff6f61; }
+
+        #book {
+            background: url("assets/sample7.jfif") center/cover no-repeat;
+            padding: 100px 50px;
+        }
+
+        #about {
+            background: url("assets/sample9.jfif") center/cover no-repeat;
+            background-attachment: fixed;
+            padding: 100px 50px;
+        }
+    </style>
+    </head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/sample2.jpg" alt="Logo">
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">All Services</a>
+            <a href="#about">About Us</a>
+            <a href="#book">Book Now</a>
+        </div>
+    </div>
+
+    <section id="home">
+        <div class="center-container">
+            <img src="assets/sample2.jpg" alt="Cleaning Service">
+            <div class="intro-text">
+                <h4>Our Mission</h4>
+                <h3>We aim to offer a seamless, user-friendly platform for booking professional cleaning and maintenance services, ensuring utmost convenience, reliability, and customer satisfaction.</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h4>Our Services</h4>
+        <h2>We provide a range of professional cleaning services, including:</h2>
+
+        <div class="services-container">
+            <div class="service-card">
+                <h4>House Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Office Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Deep Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Carpet and Upholstery Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Industrial Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Pet Hair & Odor Removal</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Public Transport Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+            <div class="service-card">
+                <h4>Aircon Cleaning</h4>
+                <a href="#book"><button>Book Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="center-container">
+            <div class="intro-text">
+                <h4>About Us</h4>
+                <h3>We are a trusted provider of professional cleaning services, dedicated to delivering a clean, safe, and healthy environment for all our clients.</h3>
+                <h4>Contact Us:</h4>
+                <h3>Phone: +95167545421</h3>
+                <h3>Address: Brgy. Adorable, San Leonardo, Nueva Ecija</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="book">
+        <h4>Book a Cleaning Service</h4>
+        <h1>Complete the form below to schedule your cleaning service.</h1>
+        <form action="cleaning service" method="POST" target="_blank">
+            <input type="text" placeholder="Your Name" required><br>
+            <input type="text" placeholder="Your Address" required><br>
+            <input type="number" placeholder="Phone Number" required><br>
+            <input type="date" required><br>
+            <label for="add">Additional Notes/Instructions</label><br>
+            <textarea id="add" name="add" rows="4" cols="50"></textarea><br>
+            <button type="submit">Submit</button> 
+            
+        </form>
+    </section>
+
+
+
+
+</body>
+</html>
